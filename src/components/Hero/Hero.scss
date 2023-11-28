@@ -1,0 +1,141 @@
+.balance-info-container-main{
+    gap: 123.79px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .balance-info-container-left{
+        width: 765px;
+
+   
+
+    .balance-info-container{
+        display: flex;
+        flex-direction: row;
+        gap: 64px;
+        align-items: center;
+       
+
+        .balance-info1{
+
+            .balance-info-text{
+              color: #56616b;
+              font-family: "Degular-Medium", Helvetica;
+              font-size: 14px;
+              font-weight: 500;
+              letter-spacing: -0.2px;
+             line-height: 16px;
+             
+            }
+
+            .balance-info-fig{
+            color: #131316;
+            font-family: "Degular-Bold", Helvetica;
+            font-size: 36px;
+            font-weight: 700;
+           height: 48px;
+           letter-spacing: -1.5px;
+           line-height: 48px;
+           margin-top: 10px;
+            }
+
+        }
+
+        .withdraw-button-container{
+            
+
+            .withdraw-button{
+            
+          width: 167px;
+          height: 52px;
+          border-radius: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+          text-align: center;
+          background: rgb(19, 19, 22);
+          color: rgb(255, 255, 255);
+          border-color: transparent;
+          border: 1px solid;
+          font-size: 16px;
+          line-height: 24px;
+          font-family: Degular;
+          font-weight: 600;
+          cursor: pointer;
+              
+            }
+        }
+
+
+
+    }
+
+    .balance-info-graph{
+        margin-top: 20px;
+    }
+}
+.balance-info-container-right {
+
+    .balance-info-container2{
+       
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 32px;
+
+
+
+        .balance-info1{
+           
+
+
+            .balance-info-text2{
+               height: 16px;
+               width: 243px;
+               color: #56616b;
+              font-family: "Degular-Medium", Helvetica;
+              font-size: 14px;
+              font-weight: 500;
+              letter-spacing: -0.2px;
+              line-height: 16px;
+  
+
+
+            }
+
+            .balance-info-fig2{
+              color: #131316;
+              font-family: "Degular-Bold", Helvetica;
+              font-size: 28px;
+              font-weight: 700;
+              height: 38px;
+              letter-spacing: -0.6px;
+              line-height: 38px;
+              margin-top: 10px;
+              width: 271px;
+
+            }
+
+        }
+
+        .balance-info-icon{
+            height: 20px;
+            position: relative;
+            width: 20px;
+
+            .info-icon{
+                height: 16px;
+                left: 2px;
+                position: absolute;
+                top: 2px;
+                width: 16px;
+
+            }
+        }
+
+        
+
+    }
+
+}
+}

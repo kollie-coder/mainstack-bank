@@ -1,0 +1,474 @@
+.transactions-conatainer-main{
+    margin-top: 50px;
+    width: 1160px;
+    align-items: center;
+
+    .transaction-top-container{
+        border-bottom: 1px #EFF1F6 solid;
+        padding-bottom: 24px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .transaction-info-text{
+            display: flex;
+            flex-direction: column;
+
+            .transaction-text12{
+                font-size: 24px;
+                color: #131316;
+                font-family:Degular;
+                font-weight: 700;
+                line-height: 32px;
+              
+            }
+
+            .info-text22{
+                width: 854px;
+                color: #56616B;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 16px;
+
+
+            }
+        }
+
+     .transaction-button{
+        display: flex;
+        flex-direction: row;
+        gap: 14px;
+        
+        
+
+        .filter-button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            background-color: #ffe7e7b6;
+            border-radius: 100px;
+            padding: 12px 20px 12px 30px;
+            cursor: pointer;
+
+          .button-text1{
+            color: #131316;
+            font-family: "Degular-Semibold", Helvetica;
+            font-size: 16px;
+            font-weight: 600;
+            height: 24px;
+            letter-spacing: -0.4px;
+            line-height: 24px;
+          }  
+
+          .button-text2{
+            
+            background-color: #000;
+            border-radius: 100px;
+            color: #ffff;
+            font-family: Degular-Medium, Helvetica;
+            font-size: 12px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 20px;
+            width: 20px;
+             
+             
+          }
+            
+
+
+        }
+
+        .export-button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            background-color: #ffe7e7b6;
+            border-radius: 100px;
+            padding: 12px 20px 12px 30px;
+            
+            .export-text{
+               color: #131316;
+               font-family: "Degular-Semibold", Helvetica;
+               font-size: 16px;
+               font-weight: 600;
+              height: 24px;
+              letter-spacing: -0.4px;
+              line-height: 24px;
+              
+
+            }
+
+        }
+     }   
+
+     
+    }
+
+
+        .transaction-bottom-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+        align-items: center;
+        
+
+      .transaction-left{
+        display: flex;
+        flex-direction: row;
+        width: 355px;
+        gap: 14.5px;
+
+        .call-received-container{
+            
+            position: relative;
+            width: 48px;
+            height: 48px;
+            background: #E3FCF2; 
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+             .call-received{
+
+                position: absolute;
+                width: 20px;
+                height: 20px;
+        }
+            
+        }
+
+       
+
+     .transaction-left-container{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .transaction-left-text3{
+            color: #131316;
+            font-size: 16px;
+            font-family: Degular;
+            font-weight: 500;
+            line-height: 24px;
+            word-wrap: break-word;
+
+
+        }
+
+        .transaction-left-text4{
+            color: #56616B;
+            font-size: 14px;  
+            font-family: Degular;
+            font-weight: 500;
+            line-height: 16px;
+            word-wrap: break-word;
+
+        }
+
+     }
+
+
+      }
+
+      .transaction-right{
+         display: flex;
+         flex-direction: column;
+         width: auto;
+         height: 44px;
+         justify-content: flex-end;
+         align-items: flex-end;
+         gap: 4px;
+
+         .transaction-amount{
+            text-align: right;
+            color: #131316;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            
+
+         }
+
+         .transaction-date{
+            text-align: right;
+            color: #56616B;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16px;
+
+         }
+      }
+
+        }
+
+
+
+        .filter-box-container{
+          display: flex;
+         
+          align-items: center;
+          justify-content: center;
+          top: 10%;
+          width: 480px;
+          padding: 12px 12px 12px 12px;
+          background: white;
+          overflow: hidden;
+          border-radius: 20px;
+          backdrop-filter: blur(8px);
+          border: 2px solid rgb(255, 255, 255);
+          box-shadow: 0px 8px 16px 4px rgba(187.85, 196.35, 204, 0.10);
+
+        .top-container{
+          display: flex;
+         flex-wrap: nowrap;
+          gap: 10px;
+          position: relative;
+         width: 456px;
+         align-items: flex-start;
+       
+
+         .top-text{
+         flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: auto;
+        position: relative;
+        height: 29px;
+        font-family: Degular Display;
+        color: rgb(19, 19, 22);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        text-align: left;
+        z-index: 1;
+
+         }
+
+         .close-icon{
+          width: 24px;
+          height: 24px;
+          
+    
+
+         }
+        } 
+
+    .search-links-wrapper{
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-top: 28px;
+      width: 412px;
+      position: relative;
+
+     .group{
+
+        display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-wrap: nowrap;
+       gap: 4px;
+       width: 70px;
+       
+       padding: 10px 18px 10px 18px;
+       background: rgb(255, 255, 255);
+       border: 1px solid rgb(239, 241, 246);
+      border-radius: 100px;
+
+            .group-text{
+              font-family: Degular;
+              color: rgb(19, 19, 22);
+              font-size: 14px;
+              font-weight: 600;
+              line-height: 16px;
+              text-align: left;
+              letter-spacing: -0.4px;
+              z-index: 3;
+    
+
+            }
+
+          }
+
+        }
+
+        }
+
+ 
+  .date-filter-container{
+    margin-top: 24px;
+    height: 76px;
+     width: 412px;
+
+
+     .date-filter-header{
+     width: 203px;
+     font-family: Degular;
+    color: rgb(19, 19, 22);
+     font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+       letter-spacing: -0.4px;
+     }
+
+     .date-range-conatiner{
+       display: flex;
+       flex-direction: row;
+       margin-top: 12px;
+       gap: 6px;
+   
+
+       .date-range{
+         display: flex;
+         align-items: flex-start;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+         gap: 10px;
+         position: relative;
+         width: 203px;
+         padding: 14px 16px 14px 16px;
+         background: rgb(239, 241, 246);
+         border: 1px solid rgb(239, 241, 246);
+         border-radius: 12px;
+
+         .range-text{
+           height: 16px;
+           font-family: Degular;
+           color: rgb(19, 19, 22);
+           font-size: 14px;
+           font-weight: 500;
+           line-height: 16px;
+           text-align: left;
+          letter-spacing: -0.2px;
+ 
+
+         }
+
+         .range-img{
+           width: 20px;
+           height: 20px;
+
+         }
+
+       }    
+      }
+      }
+
+
+       
+      .transaction-type-status-container{
+        height: 76px;
+        margin-top: 24px;
+        
+        .type-header{
+          position: relative;
+          width: 412px;
+          height: 16px;
+         margin: 0 auto;
+        font-family: Degular;
+      color: #131316;
+       font-size: 16px;
+       font-weight: 600;
+       line-height: 24px;
+        letter-spacing: -0.4px;
+          
+
+        }
+
+        .transaction-type-status{
+          display: flex;
+          justify-content: space-between;
+          margin-top: 12px;
+        width: 412px;
+        
+        padding: 14px 16px 14px 16px;
+         background: rgb(239, 241, 246);
+         border: 1px solid rgb(239, 241, 246);
+        border-radius: 12px;
+
+          .type-text{
+
+            width: 360px;
+             height: 16px;
+             font-family: Degular;
+            color: rgb(19, 19, 22);
+            font-size: 14px;
+          font-weight: 500;
+          line-height: 16px;
+           letter-spacing: -0.2px;
+            
+
+          }
+
+        }
+
+
+      }    
+
+    .modal-botton-conatiner{
+      //366
+     margin-top: 246px;
+      height: 78px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 12px;
+      width: 456px;
+      background: rgba(255, 255, 255, 0.9);
+      
+     
+
+      .clear-button-container{
+
+        display: flex;
+       align-items: center;
+      justify-content: center;
+       font-family: Degular;
+       color: rgb(19, 19, 22);
+        font-size: 16px;
+       font-weight: 600;
+       line-height: 24px;
+       width: 198px;
+        text-align: center;
+     padding: 12px 24px 12px 24px;
+       background: rgb(255, 255, 255);
+      border: 1px solid rgb(239, 241, 246);
+      border-radius: 100px;
+      letter-spacing: -0.4px;
+
+      }
+
+      .apply-button-container{
+
+        display: flex;
+        align-items: center;
+       justify-content: center;
+        font-family: Degular;
+        color: rgb(19, 19, 22);
+         font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        width: 198px;
+         text-align: center;
+       gap: 8px;
+      padding: 12px 24px 12px 24px;
+        background: #DBDEE5;
+       border: 1px solid rgb(239, 241, 246);
+       border-radius: 100px;
+       letter-spacing: -0.4px;
+
+      }
+    }  
+      
+
+    
+    
+}

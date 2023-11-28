@@ -1,0 +1,100 @@
+
+  
+  .main-container {
+    position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  gap: 7px;
+  padding: 4px 4px 4px 4px;
+  background: rgb(255, 255, 255);
+  border-radius: 100px;
+  box-shadow: 0 6px 12px 0 rgba(92, 115, 131, 0.08);
+  width: 50px;
+  }
+  .group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    flex-shrink: 0;
+    gap: 8px;
+  }
+  .wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 8px 8px 8px 8px;
+   
+   
+  }
+  .img {
+    width: 24px;
+    height: 24px;
+  
+    
+  }
+  .box {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 4px;
+    padding: 8px 8px 8px 8px;
+    border-radius: 100px;
+  }
+  .wrapper-2 {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    
+  }
+  .img-2 {
+    position: absolute;
+    width: 79.17%;
+    height: 83.83%;
+    top: 8.08%;
+    left: 10.42%;
+    z-index: 2;
+  }
+  .section {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 8px 8px 8px 8px;
+   
+  }
+  .section-2 {
+    
+    position: relative;
+    width: 24px;
+    height: 24px;
+   
+  }
+  .img-3 {
+    position: absolute;
+    width: 83.33%;
+    height: 78.71%;
+    top: 10.65%;
+    left: 8.33%;
+    z-index: 3;
+  }
+  .wrapper-3 {
+    display: flex;
+    align-items: flex-start;
+    flex-shrink: 0;
+    gap: 4px;
+    padding: 8px 8px 8px 8px;
+    border-radius: 100px;
+  }
+  .img-4 {
+   
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
