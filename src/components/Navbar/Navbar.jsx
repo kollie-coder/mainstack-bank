@@ -3,12 +3,12 @@ import './Navbar.scss'
 import MainStack from '../../assets/mainstack-logo.svg';
 import Home from '../../assets/home.svg';
 import InsertChart from '../../assets/insert_chart.svg';
-import Payment from '../../assets/payments1.svg';
 import Group from '../../assets/group.svg';
 import Widgets from '../../assets/widgets.svg';
 import Notification from '../../assets/notifications.svg';
 import Chat from '../../assets/chat.svg';
 import Menu from '../../assets/menu.svg';
+import Payment from '../../assets/payments3.svg'
 
 
 
@@ -38,7 +38,7 @@ const Navbar = () => {
 
         <div className='nav-links'>
 
-        <img src={InsertChart} alt='payment' className='nav-links-icons'/>
+        <img src={Payment} alt='payment' className='nav-links-icons'/>
             <span className='nav-links-text'>Revenue</span>
 
         </div>

@@ -62,24 +62,6 @@ const Transactions = () => {
       };
 
 
-     { /*useEffect(() => {
-        // Handle scrolling behavior when the filter box is active
-        const handleScroll = () => {
-          if (showFilterBox) {
-            document.body.style.overflow = 'hidden';
-          } else {
-            document.body.style.overflow = 'auto';
-          }
-        };
-    
-        window.addEventListener('scroll', handleScroll);
-    
-        return () => {
-          // Cleanup: remove the event listener when the component unmounts
-          window.removeEventListener('scroll', handleScroll);
-        };
-      }, [showFilterBox]);*/}
-
       useEffect(() => {
         document.body.style.overflow = showFilterBox ? 'hidden' : 'auto';
         return () => {

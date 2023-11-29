@@ -18,7 +18,7 @@
     right: 12px;
     bottom: 12px;
     left: 24px;
-    z-index: 700; /* to make it more visible than anyother component */
+    z-index: 700;
     padding-right: 10px;
 
     .logo-container{
@@ -51,11 +51,20 @@
           gap: 4px;
           padding: 8px 18px 8px 14px;
           border-radius: 100px;
+          cursor: pointer;
+
+
+          .nav-links-container .nav-links:hover {
+            background-color: #EFF1F6;
+          }
+        
 
           
           .nav-links-icon{
             width: 20px;
             height: 20px;
+           
+            
             
           }
 
@@ -74,8 +83,21 @@
             
         }
 
+        
+
 
     }
+
+    .nav-links-container .nav-links:nth-child(3) {
+        background-color: #131316; 
+        border-radius: 100px;
+        padding: 8px 18px 8px 14px;
+      }
+      
+      
+      .nav-links-container .nav-links:nth-child(3) .nav-links-text {
+        color: #ffffff; 
+      }
 
     .nav-links-container2{
         display: flex;

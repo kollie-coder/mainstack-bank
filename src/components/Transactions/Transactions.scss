@@ -47,7 +47,7 @@
             align-items: center;
             justify-content: center;
             gap: 4px;
-            background-color: #ffe7e7b6;
+            background: #EFF1F6;
             border-radius: 100px;
             padding: 12px 20px 12px 30px;
             cursor: pointer;
@@ -88,7 +88,7 @@
             align-items: center;
             justify-content: center;
             gap: 4px;
-            background-color: #ffe7e7b6;
+            background: #EFF1F6;
             border-radius: 100px;
             padding: 12px 20px 12px 30px;
             
@@ -222,7 +222,7 @@
           width: 100%;
           height: 100%;
           background: rgba(0, 0, 0, 0.5);
-          z-index: 999; /* Adjust the z-index as needed */
+          z-index: 999; 
           display: none;
         }
         
@@ -230,7 +230,7 @@
           display: block;
         }
         
-        /* Add this style to disable scrolling when the overlay is visible */
+      
         .overlay.visible + .transactions-container-main {
           overflow: hidden;
         }
@@ -258,8 +258,8 @@
           top: 5px;
           right: 10px;
           z-index: 1001;
-          transform: translateX(100%); /* Updated property */
-          transition: all 0.7s ease; /* Optional: Add transition for smooth animation */
+          transform: translateX(100%); 
+          transition: all 0.7s ease; 
         
           &.visible {
             opacity: 1;
