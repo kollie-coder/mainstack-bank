@@ -14,10 +14,12 @@
     flex-direction: row;
     align-items: center;
     text-align: center;
-    top: 12px;
+    top: 0;
     right: 12px;
     bottom: 12px;
     left: 24px;
+    z-index: 700; /* to make it more visible than anyother component */
+    padding-right: 10px;
 
     .logo-container{
         height: 36px;
@@ -110,6 +112,7 @@
         height: auto;
         border-radius: 100px;
         gap: 8px;
+        cursor: pointer;
 
         .menu-dark-text-wrapper{
                 
@@ -152,5 +155,6 @@
         }
     }
     }
+
 
 }

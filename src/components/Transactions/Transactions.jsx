@@ -5,12 +5,14 @@ import ExpandMore from '../../assets/expand_more.svg';
 import Download from '../../assets/download.svg';
 import CallReceived from '../../assets/call_received.svg';
 import Close from '../../assets/close.svg';
-import { motion } from "framer-motion";
+
 
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import 'react-horizontal-scrolling-menu/dist/styles.css';
 
+
 const Transactions = () => {
+    
 
     const menuItems = [
         { text: 'Today' },
@@ -21,7 +23,16 @@ const Transactions = () => {
 
     const [transactions, setTransactions] = useState([]);
 
-    const [ toggle, setToggle ] = useState(true)
+    const [showFilterBox, setShowFilterBox] = useState(false);
+
+    const handleFilterButtonClick = () => {
+        setShowFilterBox(!showFilterBox);
+      };
+
+      const handleCloseFilterBox = () => {
+        setShowFilterBox(false);
+      };
+
 
   useEffect(() => {
     const fetchTransactions = async () => {
@@ -37,11 +48,45 @@ const Transactions = () => {
     fetchTransactions();
   }, []);
 
+
+  useEffect(() => {
+    console.log("showFilterBox:", showFilterBox);
+  }, [showFilterBox]);
+
+
+
     // Function to format the date in "Month day, year" format
     const formatDate = (dateString) => {
         const options = { month: 'long', day: '2-digit', year: 'numeric' };
         return new Date(dateString).toLocaleDateString('en-US', options);
       };
+
+
+     { /*useEffect(() => {
+        // Handle scrolling behavior when the filter box is active
+        const handleScroll = () => {
+          if (showFilterBox) {
+            document.body.style.overflow = 'hidden';
+          } else {
+            document.body.style.overflow = 'auto';
+          }
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        return () => {
+          // Cleanup: remove the event listener when the component unmounts
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, [showFilterBox]);*/}
+
+      useEffect(() => {
+        document.body.style.overflow = showFilterBox ? 'hidden' : 'auto';
+        return () => {
+          document.body.style.overflow = 'auto';
+        };
+      }, [showFilterBox]);
+
 
   return (
     <div className='transactions-conatainer-main'>
@@ -55,7 +100,7 @@ const Transactions = () => {
 
             <div className='transaction-button'>
              
-                <div className='filter-button'>
+                <div className='filter-button' onClick={handleFilterButtonClick}>
                     <span className='button-text1'>Filter</span>
                     <span className='button-text2'>{transactions.length}</span>
 
@@ -107,19 +152,18 @@ const Transactions = () => {
             </div>
           ))}
 
+          
+<div className={`overlay${showFilterBox ? ' visible' : ''}`} onClick={handleCloseFilterBox}></div>
 
-   <div className='filter-box-container'>
+   <div className={`filter-box-container${showFilterBox ? ' visible' : ''}`} >
 
-    {toggle && (
-                 <motion.div
-                 whileInView={{ X: [300, 0] }}
-                 transition={{ duration: 0.85, ease: 'easeOut' }}
-                 >
+   
+                 
                 <div className='top-container'>
 
                     <div className='top-text'>Filter</div>
 
-                    <img src={Close} alt='close' className='close-icon' />
+                    <img src={Close} alt='close' className='close-icon' onClick={handleCloseFilterBox} />
 
                 </div>
 
@@ -136,8 +180,7 @@ const Transactions = () => {
             <span className='group-text'>{item.text}</span>
           </div>
           </ScrollMenu>    
-      ))}
-                           
+      ))}                       
 
 </div>
 
@@ -202,14 +245,6 @@ const Transactions = () => {
                             <div className='apply-button-container'>Apply</div>
                            
                             </div>
-
-                            
-
-                        
-  
-
-                 </motion.div>
-            )}
 
         </div>
 
