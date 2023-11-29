@@ -5,7 +5,7 @@ import ExpandMore from '../../assets/expand_more.svg';
 import Download from '../../assets/download.svg';
 import CallReceived from '../../assets/call_received.svg';
 import Close from '../../assets/close.svg';
-
+import Receipt from '../../assets/receipt_long.svg';
 
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import 'react-horizontal-scrolling-menu/dist/styles.css';
@@ -89,7 +89,10 @@ const Transactions = () => {
 
 
   return (
-    <div className='transactions-conatainer-main'>
+    <div>
+     
+
+        <div className='transactions-conatainer-main'>
         <div className='transaction-top-container'>
             
             <div className='transaction-info-text'>
@@ -120,11 +123,26 @@ const Transactions = () => {
 
         </div>
 
-        <div>
 
-
+        {transactions.length === 0 ? (
+        <div className='no-matching-container'>
+        <div className='receipt-container'>
+            <img src={Receipt} alt='receipt' className='receipt-icon'/>
+        
+        </div>
+        <div className='no-match-text1'>No matching transaction found for the selected filter</div>
+        <div className='no-match-text2'>Change your filters to see more results, or add a new product.</div>
+        
+        <div className='clear-filter-btn-container'>
+            <div className='clear-filter-btn-text'>Clear Filter</div>
+        </div>
+        
+        
         </div>
 
+     ) : (
+
+        <>
 
          {transactions.map((transaction, index) => (
             <div className='transaction-bottom-container' key={index}>
@@ -151,6 +169,11 @@ const Transactions = () => {
 
             </div>
           ))}
+           
+           </>     
+    
+
+)}
 
           
 <div className={`overlay${showFilterBox ? ' visible' : ''}`} onClick={handleCloseFilterBox}></div>
@@ -246,11 +269,14 @@ const Transactions = () => {
                            
                             </div>
 
-        </div>
-
-    
+        </div>  
 
   </div>
+        
+       
+
+</div>
+
 
        
        
